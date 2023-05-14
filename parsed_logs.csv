@@ -1,0 +1,66 @@
+2023-05-14T09:34:21.476Z, INFO,  proxy environment: http_proxy="" https_proxy="" no_proxy=""
+2023-05-14T09:34:21.477Z, WARN,  no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set
+2023-05-14T09:34:21.479Z, INFO,  core: Initializing version history cache for core
+2023-05-14T09:34:21.481Z, INFO,  core: security barrier not initialized
+2023-05-14T09:34:21.481Z, INFO,  core: security barrier initialized: stored=1 shares=1 threshold=1
+2023-05-14T09:34:21.482Z, INFO,  core: post-unseal setup starting
+2023-05-14T09:34:21.485Z, INFO,  core: loaded wrapping token key
+2023-05-14T09:34:21.485Z, INFO,  core: Recorded vault version: vault version=1.11.0 upgrade time="2023-05-14 09:34:21.485212257 +0000 UTC" build date=2022-06-17T15:48:44Z
+2023-05-14T09:34:21.485Z, INFO,  core: successfully setup plugin catalog: plugin-directory=""
+2023-05-14T09:34:21.486Z, INFO,  core: no mounts; adding default mount table
+2023-05-14T09:34:21.494Z, INFO,  core: successfully mounted backend: type=cubbyhole path=cubbyhole/
+2023-05-14T09:34:21.495Z, INFO,  core: successfully mounted backend: type=system path=sys/
+2023-05-14T09:34:21.495Z, INFO,  core: successfully mounted backend: type=identity path=identity/
+2023-05-14T09:34:21.505Z, INFO,  core: successfully enabled credential backend: type=token path=token/ namespace="ID: root. Path: "
+2023-05-14T09:34:21.506Z, INFO,  rollback: starting rollback manager
+2023-05-14T09:34:21.510Z, INFO,  core: restoring leases
+2023-05-14T09:34:21.512Z, INFO,  expiration: lease restore complete
+2023-05-14T09:34:21.518Z, INFO,  identity: entities restored
+2023-05-14T09:34:21.518Z, INFO,  identity: groups restored
+2023-05-14T09:34:21.754Z, INFO,  core: post-unseal setup complete
+2023-05-14T09:34:21.754Z, INFO,  core: root token generated
+2023-05-14T09:34:21.754Z, INFO,  core: pre-seal teardown starting
+2023-05-14T09:34:21.754Z, INFO,  rollback: stopping rollback manager
+2023-05-14T09:34:21.754Z, INFO,  core: pre-seal teardown complete
+2023-05-14T09:34:21.755Z, INFO,  core.cluster-listener.tcp: starting listener: listener_address=0.0.0.0:8201
+2023-05-14T09:34:21.755Z, INFO,  core.cluster-listener: serving cluster requests: cluster_listen_address=[::]:8201
+2023-05-14T09:34:21.755Z, INFO,  core: post-unseal setup starting
+2023-05-14T09:34:21.755Z, INFO,  core: loaded wrapping token key
+2023-05-14T09:34:21.755Z, INFO,  core: successfully setup plugin catalog: plugin-directory=""
+2023-05-14T09:34:21.755Z, INFO,  core: successfully mounted backend: type=system path=sys/
+2023-05-14T09:34:21.756Z, INFO,  core: successfully mounted backend: type=identity path=identity/
+2023-05-14T09:34:21.756Z, INFO,  core: successfully mounted backend: type=cubbyhole path=cubbyhole/
+2023-05-14T09:34:21.757Z, INFO,  core: successfully enabled credential backend: type=token path=token/ namespace="ID: root. Path: "
+2023-05-14T09:34:21.757Z, INFO,  rollback: starting rollback manager
+2023-05-14T09:34:21.758Z, INFO,  core: restoring leases
+2023-05-14T09:34:21.758Z, INFO,  expiration: lease restore complete
+2023-05-14T09:34:21.759Z, INFO,  identity: entities restored
+2023-05-14T09:34:21.759Z, INFO,  identity: groups restored
+2023-05-14T09:34:21.759Z, INFO,  core: post-unseal setup complete
+2023-05-14T09:34:21.759Z, INFO,  core: vault is unsealed
+2023-05-14T09:34:21.765Z, INFO,  expiration: revoked lease: lease_id=auth/token/root/h2ea821e9d72c4e701e4a5bbe18adf4a01a0b15680ad5a882322004e9e8a2c649
+2023-05-14T09:34:21.770Z, INFO,  core: successful mount: namespace="" path=secret/ type=kv
+2023-05-14T09:34:21.778Z, INFO,  secrets.kv.kv_ba4e1236: collecting keys to upgrade
+2023-05-14T09:34:21.779Z, INFO,  secrets.kv.kv_ba4e1236: done collecting keys: num_keys=1
+2023-05-14T09:34:21.779Z, INFO,  secrets.kv.kv_ba4e1236: upgrading keys finished
+2023-05-14T09:34:31.790Z, INFO,  core: enabled credential backend: path=approle/ type=approle
+2023-05-14T09:34:52.470Z, INFO,  secrets.database.database_4bb6eef4: initializing database rotation queue
+2023-05-14T09:34:52.471Z, INFO,  core: successful mount: namespace="" path=projects-api/database/ type=database
+2023-05-14T09:34:52.481Z, INFO,  secrets.database.database_4bb6eef4: populating role rotation queue
+2023-05-14T09:34:52.482Z, INFO,  secrets.database.database_4bb6eef4: starting periodic ticker
+2023-05-14T09:35:13.293Z, INFO,  core: successful mount: namespace="" path=projects-api/secrets/ type=kv
+2023-05-14T09:35:13.303Z, INFO,  secrets.kv.kv_fc0e7648: collecting keys to upgrade
+2023-05-14T09:35:13.303Z, INFO,  secrets.kv.kv_fc0e7648: done collecting keys: num_keys=1
+2023-05-14T09:35:13.303Z, INFO,  secrets.kv.kv_fc0e7648: upgrading keys finished
+2023-05-14T09:38:16.310Z, ERROR, secrets.system.system_1a396761: error occurred during enable credential: path=approle/ error="path is already in use at approle/"
+2023-05-14T09:38:16.386Z, ERROR, secrets.system.system_1a396761: error occurred during enable mount: path=projects-api/database/ error="path is already in use at projects-api/database/"
+2023-05-14T09:38:16.467Z, ERROR, secrets.system.system_1a396761: error occurred during enable mount: path=projects-api/secrets/ error="path is already in use at projects-api/secrets/"
+2023-05-14T10:10:50.599Z, ERROR, secrets.system.system_1a396761: error occurred during enable credential: path=approle/ error="path is already in use at approle/"
+2023-05-14T10:10:50.656Z, ERROR, secrets.system.system_1a396761: error occurred during enable mount: path=projects-api/database/ error="path is already in use at projects-api/database/"
+2023-05-14T10:10:50.707Z, ERROR, secrets.system.system_1a396761: error occurred during enable mount: path=projects-api/secrets/ error="path is already in use at projects-api/secrets/"
+2023-05-14T10:13:27.951Z, INFO,  expiration: revoked lease: lease_id=projects-api/database/creds/projects-api-role/QxM79wudYtNjpdTbatxP5ORs
+2023-05-14T11:11:27.770Z, INFO,  expiration: revoked lease: lease_id=auth/approle/login/h91abe3a284cd44817c7b049c3ec33add1f960b23cf73e3b04ab556ca9414b297
+2023-05-14T12:21:58.211Z, ERROR, secrets.system.system_1a396761: error occurred during enable credential: path=approle/ error="path is already in use at approle/"
+2023-05-14T12:21:58.299Z, ERROR, secrets.system.system_1a396761: error occurred during enable mount: path=projects-api/database/ error="path is already in use at projects-api/database/"
+2023-05-14T12:21:58.394Z, ERROR, secrets.system.system_1a396761: error occurred during enable mount: path=projects-api/secrets/ error="path is already in use at projects-api/secrets/"
+2023-05-14T12:24:11.509Z, INFO,  expiration: revoked lease: lease_id=projects-api/database/creds/projects-api-role/HxUvdx1cmVw9J6vpXESPdYIf
