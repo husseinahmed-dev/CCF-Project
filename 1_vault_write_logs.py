@@ -15,7 +15,7 @@ def use_regex(input_text):
 
 ### 1 ###
 # Run the bash script to save docker logs
-subprocess.run(["bash", "-c", "docker logs dotnet-vault_vault_1 > docker_logs.txt 2>&1"])
+subprocess.run(["bash", "-c", "docker logs ccf-project_vault_1 > docker_logs.txt 2>&1"])
 
 ### 2 ###
 # Open input and output files
