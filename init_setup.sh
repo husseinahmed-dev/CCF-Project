@@ -1,7 +1,8 @@
 #!/bin/bash
 
-export VAULT_ADDR='http://127.0.0.1:8200'
-export VAULT_TOKEN='some-root-token'
+export VAULT_ADDR='https://vault-cluster-public-vault-196dd514.d50d7740.z1.hashicorp.cloud:8200'
+export VAULT_TOKEN='hvs.CAESINqmAYhL7bPHICDI3ysmEUlCXaIE7jzcJ6RvnBW66I7sGicKImh2cy5UNExxQ0c0MnBhM0tEcERvZkN1dmxtYmguV25SeFgQkVw'
+export VAULT_NAMESPACE='admin'
 
 docker-compose up -d --build
 
