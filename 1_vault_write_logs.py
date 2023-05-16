@@ -97,7 +97,7 @@ def csv_to_mongodb(csv_file_path, mongodb_uri, mongodb_database, mongodb_collect
 
 # Usage example
 csv_file_path = 'parsed_logs.csv'
-mongodb_uri = 'mongodb://34.215.234.156:27017'  # Replace with your MongoDB connection URI
+mongodb_uri = 'mongodb://18.246.63.222:27017'  # Replace with your MongoDB connection URI
 mongodb_database = 'ccf-project'  # Replace with your target database name
 mongodb_collection = 'hashicorp-vault-collection'  # Replace with your target collection name
 
